@@ -207,6 +207,13 @@ hr {
     color: #3a3a3a;
 }
 
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
 
 /* media query: tablets and larger (768px and up) */
 
@@ -267,6 +274,11 @@ hr {
         text-align: end;
         align-self: flex-end;
     }
+
+    #photos {
+        column-count: 3;
+        column-gap: 0;
+    }
 }
 
 /* large devices (laptops and desk tops 992px and up*/
@@ -275,9 +287,6 @@ hr {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a
     }
-}
-
-@media screen and (min-width: 992px) {
     /* Reasons Section*/
     #benefits {
         display: flex;
@@ -302,5 +311,11 @@ hr {
 
     #benefits-physical > div {
         align-self: flex-end;
+    }
+
+    /* Gallery */
+    #photos {
+        column-count: 4;
+        column-gap: 0;
     }
 }
